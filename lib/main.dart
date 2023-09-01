@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 36),
                   ListTile(
                     trailing: Text(
-                      'Rishikesh Raj',
+                      'Rishikesh Raj \n Taskforce ',
                       style: TextStyle(fontSize: 5),
                     ),
                   )
