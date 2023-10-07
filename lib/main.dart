@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    home: Splash_screen(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -139,8 +142,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 36),
                   ListTile(
                     trailing: Text(
-                      'Rishikesh Raj \n Taskforce ',
-                      style: TextStyle(fontSize: 5),
+                      'Rishikesh Raj \n TASKFORCE ',
+                      style: TextStyle(fontSize: 7),
                     ),
                   )
                 ],
