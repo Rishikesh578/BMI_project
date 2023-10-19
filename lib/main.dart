@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screen.dart';
+import 'class.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -139,6 +140,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     result,
                     style: TextStyle(fontSize: 18),
                   ),
+             
+                  SizedBox(height: 60),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context)=>classification(),
+                        ),
+                      );
+                    },
+                    child:Text('Details'),
+                  ),
+                  
+                
                   SizedBox(height: 36),
                   ListTile(
                     trailing: Text(
