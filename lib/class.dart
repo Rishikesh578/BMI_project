@@ -6,12 +6,16 @@ class classification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink.shade300,
       appBar: AppBar(
         leading: Icon(Icons.keyboard_arrow_left),
         
       ),
       body: Center(
-        child: DataTable(
+        
+        child: Column(
+          children: [
+        DataTable(
           columns: const <DataColumn>[
             DataColumn(label: Text('Weight Status',style: TextStyle(fontWeight:FontWeight.bold))),
             DataColumn(label: Text(' BMI Values',style: TextStyle(fontWeight:FontWeight.bold))),
@@ -54,7 +58,15 @@ class classification extends StatelessWidget {
             ),
           ],     
     ),
-       
+    SizedBox(height: 40),
+    TextButton(
+  onPressed: () {
+    Navigator.of(context).pop();
+  },
+  child: Text('Go Back'),
+)
+        ]
+        ),
     )
     );
       
